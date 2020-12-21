@@ -1,0 +1,38 @@
+################################### REQUIREMENTS ###################################
+
+please install python 3.6 or above.
+
+Then in the project directory you can find the file named "requirements.txt".
+
+It has all the required lib of python to run this API, please install it using pip
+
+command:
+pip install -r requirements.txt
+
+################################### DATABASE #######################################
+
+Here we are using mysql database.
+
+create the database named "doctor_details"
+
+Update your database credentials in "settings.py"
+
+Now you are ready to migrate the API with database.
+
+locate the "manage.py" file and open the terminal / cmd in that folder.
+
+Run the following command, it will create all the tables in the database.
+
+"python manage.py makemigrations"
+
+after that following command.
+
+"python manage.py migrate"
+
+################################### RUN THE API ###################################
+
+You can run the API by following command.
+
+"python manage.py runserver localhost:8000"
+
+This will start the API on http://localhost:8000
